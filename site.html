@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUROSAWA's site</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="sample.js"></script>
+</head>
+<body> 
+  <script>
+    function password(){
+        var name=prompt("What university did we learned in?(Answer in 6 characters.)");
+
+
+        if(name == "Malaya" || name == "malaya"){
+          location.href="thanks.html";
+        }else{
+          location.href="index.html";
+        }}
+  </script>
+  <header>
+    <img src="header.jpg" class="headimg">
+    <div class="title">
+      Summer enrichent programme
+    </div> 
+    <ul id="nav">
+      <li><a target="_blank" rel="noopener noreferrer" onclick="password();">Thanks</a></li>
+      <li><a href="sendai.html" target="_blank" rel="noopener noreferrer">Our favorite place</a></li>
+    </ul>
+  </header>
+ 
+  <script type="text/javascript">
+    function presentTime(){
+    myTbl = new Array("Sunday","Monday","Tuesday","Wednesday","Thirsday","Friday","Saturday");
+    myMON = new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+    myD = new Date();
+    
+    myYear = myD.getFullYear();
+    myMonth = myD.getMonth() + 1;
+    myDate = myD.getDate();
+    myDay = myD.getDay();
+    myHours = myD.getHours();
+    myMinutes = myD.getMinutes();
+    mySeconds = myD.getSeconds();
+    
+    myMess1 = myTbl[myDay] + ", " + myDate + "th " + myMON[myMonth] +" " + myYear ;
+    myMess2 = myHours + ":" + myMinutes + ":" + mySeconds ;
+    document.myForm.myFormDate.value = myMess1;
+    document.myForm.myFormTime.value = myMess2;
+    }
+    </script>
+    <div class="time">
+    <form name="myForm">
+    <input type="text"  name="myFormDate">
+    <input type="text" name="myFormTime">
+    </form>
+  </div>
+    <script type="text/javascript">
+     setInterval("presentTime()",1000);
+    </script>
+</body>
+</html>
