@@ -3,26 +3,16 @@
   padding:0;
 }
 
-@media(min-width:480px){
+
 .title{
   font-size:50px;
   color:white;
   position:relative;
+  top:-376px;
   margin:20px;
-  left:10px;
-  top:-270px;
-}
 }
 
-@media(max-width:480px){
-  .title{
-  font-size:40px;
-  color:white;
-  position:relative;
-  margin:20px;
-  
-  }
-}
+
 
 
 
@@ -46,11 +36,6 @@ ul li {
   height: 50px;
 }
 
-@media(max-width:480px){
-  ul li{
-    height:80px;
-  }
-}
 
 ul li:hover{
   background-color:gray;
