@@ -1,5 +1,4 @@
-/* パソコン用 */
-@media(min-width:960px){
+@media screen and (min-width:960px){
   div{
     font-size:14px;
     width:30%;
@@ -13,7 +12,7 @@
 }
 
 /* タブレット用 */
- @media(min-width:561px)and(max-width:959px){
+ @media screen and (min-width:561px) and (max-width:959px){
    div{
     font-size:12px;
     width:47%;
@@ -22,17 +21,22 @@
     border-color:#807BEE;
     padding:10px;
     margin:10px;
-    border-radius:6px;}
+    border-radius:6px;
+  }
  }
   
 
 
 /* スマホ用 */
-@media(max-width:560px;){
+@media screen and (max-width:560px){
+  
+*{
+  text-align:center;
+}  
+
 div{
   font-size:11px;
   width:90%;
-  text-align:center;
   border-style:solid;
   border-width:1.5px;
   border-color:#807BEE;
@@ -42,4 +46,3 @@ div{
 }
 
 }
-
