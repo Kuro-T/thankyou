@@ -1,14 +1,51 @@
-.picture{
-  width:48%
-}
-
+@media screen and (min-width:960px){
 .explain{
-  margin-left:15%;
+  margin-left:8%;
+  margin-bottom:25px;
+  font-size:16px;
+
 }
 
 .picture img{
-  margin-left:10%;
+  margin-left:5%;
   margin-top:15%;
   margin-bottom:5%;
   height:600px;
 }
+}
+
+/* タブレット */
+@media screen and (min-width:560px) and (max-width:959px){
+  .explain{
+    margin-left:8%;
+    margin-bottom:20px;
+    font-size:14px;
+  }
+  
+  .picture img{
+    margin-left:5%;
+    margin-top:15%;
+    margin-bottom:5%;
+    height:600px;
+  }
+}
+
+/* スマホ */
+@media screen and (max-width:559px){
+  .picture{
+  }
+
+  .explain{
+    margin-left:8%;
+    margin-bottom:20px;
+    font-size:11px;
+  }
+  
+  .picture img{
+    width:80%;
+    margin-left:5%;
+    margin-top:15%;
+    margin-bottom:5%;
+  }
+}
+
