@@ -1,3 +1,4 @@
+/* パソコン用 */
 @media screen and (min-width:960px){
   div{
     font-size:14px;
@@ -8,6 +9,7 @@
     padding:10px;
     margin:10px;
     border-radius:6px;
+    float:left;
 }
 }
 
@@ -22,6 +24,7 @@
     padding:10px;
     margin:10px;
     border-radius:6px;
+    float:left;
   }
  }
   
@@ -44,6 +47,8 @@ div{
   margin:10px;
   border-radius:4px;
   text-align:left;
+  float:left;
 }
 
 }
+
