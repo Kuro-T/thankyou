@@ -1,4 +1,9 @@
 @media screen and (min-width:960px){
+
+  .title{
+    margin-bottom:60px;
+  }
+
 .explain{
   margin-left:8%;
   margin-bottom:25px;
@@ -16,6 +21,10 @@
 
 /* タブレット */
 @media screen and (min-width:560px) and (max-width:959px){
+
+  .title{
+    margin-bottom:50px;
+  }
   .explain{
     margin-left:8%;
     margin-bottom:20px;
@@ -32,7 +41,9 @@
 
 /* スマホ */
 @media screen and (max-width:559px){
-  .picture{
+  
+  .title{
+    margin-bottom:50px;
   }
 
   .explain{
