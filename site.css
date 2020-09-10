@@ -230,6 +230,8 @@ ul li a {
     border-color:#6495ed;
     border-width:2px;
     border-style:solid;
+    position:relative;
+    top:-70px;
   }
   
   .btn-push {
